@@ -38,10 +38,11 @@ def visualize_weights(net, layer_name, padding=4, filename=''):
     plt.figure(figsize=(10, 10))
     plt.axis('off')
     plt.imshow(result, cmap='gray', interpolation='nearest')
-    plt.show()
 
     # Save plot if filename is set
     if filename != '':
         plt.savefig(filename, bbox_inches='tight', pad_inches=0)
+
+    plt.show()
 
 
